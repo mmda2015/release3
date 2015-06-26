@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:background="@drawable/title" >
+    
+    <ImageButton
+        android:id="@+id/ans2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ans1"
+        android:layout_centerHorizontal="true"
+       android:onClick="onAns2"
+        android:background="@drawable/choice_normal2" />
+    
+    <ImageButton
+        android:id="@+id/ans3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ans2"
+        android:layout_centerHorizontal="true"
+        android:onClick="onAns3"
+        android:background="@drawable/choice_normal" />
+    
+    
+    <ImageButton
+        android:id="@+id/ans4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ans3"
+        android:layout_centerHorizontal="true"
+        android:onClick="onAns4"
+        android:background="@drawable/choice_normal4" />
+    
+     <ImageView
+        android:id="@+id/competitor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/boy" />
+
+     <Chronometer
+         android:id="@+id/chronometer1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:layout_weight="1"
+         android:background="@drawable/time_bg"
+         android:gravity="center"
+         android:textColor="#000000"
+         android:textSize="20sp" />
+
+     <ImageView
+         android:id="@+id/competitor1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:background="@drawable/girl" />
+
+     <ImageButton
+         android:id="@+id/ans1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/ans2"
+         android:layout_below="@+id/competitor2"
+         android:layout_marginTop="28dp"
+         android:background="@drawable/choice_normal1"
+         android:onClick="onAns1" />
+
+     <ImageView
+         android:id="@+id/rightStar"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/faultCard"
+         android:layout_alignLeft="@+id/ans4"
+         android:background="@drawable/zhengque"
+         android:onClick="onRightStar" />
+
+     <TextView
+         android:id="@+id/question"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/competitor2"
+         android:layout_toLeftOf="@+id/faultCard"
+         android:text="@string/hello_world" />
+
+     <ImageView
+         android:id="@+id/faultCard"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignRight="@+id/ans4"
+         android:layout_marginBottom="23dp"
+         android:background="@drawable/paicuo"
+         android:onClick="onFaultCard" />
+
+</RelativeLayout>

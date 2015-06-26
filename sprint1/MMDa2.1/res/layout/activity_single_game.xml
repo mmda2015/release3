@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:background="@drawable/title" >
+    
+    <ImageButton
+        android:id="@+id/answer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answer1"
+        android:layout_centerHorizontal="true"
+        android:onClick="onAnswer2"
+        android:background="@drawable/choice_normal2" />
+    
+    <ImageButton
+        android:id="@+id/answer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answer2"
+        android:layout_centerHorizontal="true"
+        android:onClick="onAnswer3"
+        android:background="@drawable/choice_normal" />
+    
+    
+    <ImageButton
+        android:id="@+id/answer4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/answer3"
+        android:layout_centerHorizontal="true"
+        android:onClick="onAnswer4"
+        android:background="@drawable/choice_normal4" />
+
+     <TextView
+         android:id="@+id/question"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="124dp"
+         android:text="@string/hello_world" />
+
+     <Chronometer
+         android:id="@+id/chronometer1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:layout_weight="1"
+         android:background="@drawable/time_bg"
+         android:gravity="center"
+         android:textColor="#000000"
+         android:textSize="20sp" />
+
+     <ImageButton
+         android:id="@+id/answer1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/answer2"
+         android:layout_below="@+id/question"
+         android:layout_marginTop="21dp"
+         android:background="@drawable/choice_normal1"
+         android:onClick="onAnswer1" />
+
+</RelativeLayout>

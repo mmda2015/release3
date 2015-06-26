@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/c1"
+    android:gravity="center|fill_vertical"
+    android:orientation="vertical" >
+
+      <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230sp"
+        android:background="@drawable/c9"
+        android:gravity="center|fill_vertical"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center" 
+            android:layout_marginTop="20sp">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c4" />
+
+            <EditText
+                android:id="@+id/user"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c10"
+                android:hint="请输入用户名" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:gravity="center"
+            android:layout_marginTop="10sp" >
+
+            <ImageView
+                android:id="@+id/image2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c3" />
+
+            <EditText
+                android:id="@+id/pwd"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:background="@drawable/c10"
+                android:hint="请输入密码" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:gravity="center"
+            android:layout_marginTop="10sp" >
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c2" />
+
+            <EditText
+                android:id="@+id/repwd"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:background="@drawable/c10"
+                android:hint="请确认密码" />
+        </TableRow>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="#0000"
+        android:onClick="ok"
+        android:src="@drawable/reg1" />
+
+    <ImageButton
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ok"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="#0000"
+        android:onClick="cancel"
+        android:src="@drawable/reg2" />
+
+</RelativeLayout>

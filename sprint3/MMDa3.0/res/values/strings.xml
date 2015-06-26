@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MMDa</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_animation">AnimationActivity</string>
+    <string name="title_activity_single_main">SingleMainActivity</string>
+    <string name="title_activity_single_sub">SingleSubActivity</string>
+    <string name="title_activity_single_game">SingleGameActivity</string>
+    <string name="title_activity_single_score">SingleScoreActivity</string>
+    <string name="title_activity_online_main">OnlineMainActivity</string>
+    <string name="title_activity_online_sub">OnlineSubActivity</string>
+    <string name="title_activity_random_match">RandomMatchActivity</string>
+    <string name="title_activity_pkfriend">PKFriendActivity</string>
+    <string name="title_activity_online_game">OnlineGameActivity</string>
+    <string name="title_activity_online_win">OnlineWinActivity</string>
+    <string name="title_activity_online_lose">OnlineLoseActivity</string>
+
+</resources>

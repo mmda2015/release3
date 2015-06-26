@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/d15" >
+
+  <TableLayout
+        android:id="@+id/tab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageAanima"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/d10" >
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="30sp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c4" />
+
+            <EditText
+                android:id="@+id/username"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c10"
+                android:hint="请输入用户名"  />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20sp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c3" />
+
+            <EditText
+                android:id="@+id/password"
+                android:inputType="textPassword"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c10"
+                android:hint="请输入密码"  />
+        </TableRow>
+    </TableLayout>
+
+    
+
+    
+    <ImageButton
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tab1"
+        android:layout_centerHorizontal="true"
+        android:background="#0000"
+        android:onClick="onLogin"
+        android:src="@drawable/countersign" />
+    
+     <ImageButton
+        android:id="@+id/login2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:background="#0000"
+        android:onClick="onRegisterq"
+        android:src="@drawable/countersigns" />
+<ImageButton
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login2"
+        android:layout_centerHorizontal="true"
+        android:background="#0000"
+        android:onClick="onRegister"
+        android:src="@drawable/countersignss" />
+
+<ImageButton
+        android:id="@+id/single"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register"
+        android:layout_centerHorizontal="true"
+        android:background="#0000"
+        android:onClick="onSingle"
+        android:src="@drawable/singlegame" />
+</RelativeLayout>

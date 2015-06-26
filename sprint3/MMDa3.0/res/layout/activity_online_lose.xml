@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loser" >
+
+    <ImageView
+        android:id="@+id/listtitle4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="118dp"
+        android:background="@drawable/girl" />
+
+    <ImageView
+        android:id="@+id/listtitle3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/listtitle4"
+        android:background="@drawable/boy" />
+
+    <TextView
+         android:id="@+id/score"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="350dp"
+         android:text="@string/hello_world" />
+
+</RelativeLayout>

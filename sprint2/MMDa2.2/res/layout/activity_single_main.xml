@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1" >
+
+       <ImageView
+           android:id="@+id/listtitle"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentTop="true"
+           android:background="@drawable/list_title" />
+       
+       <ImageButton
+        android:id="@+id/music"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listtitle"
+        android:layout_centerHorizontal="true"
+        android:background="#0000"
+        android:onClick="onMusic"
+        android:src="@drawable/music2" />
+
+        <ImageButton
+            android:id="@+id/sport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edu"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="38dp"
+            android:background="#0000"
+            android:onClick="onSport"
+            android:src="@drawable/sport2" />
+
+        <ImageButton
+            android:id="@+id/edu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/sport"
+            android:layout_alignLeft="@+id/game"
+            android:layout_marginBottom="16dp"
+            android:background="#0000"
+            android:onClick="onEdu"
+            android:src="@drawable/edu2" />
+
+        <ImageButton
+            android:id="@+id/game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/edu"
+            android:layout_alignLeft="@+id/movie"
+            android:layout_marginBottom="22dp"
+            android:background="#0000"
+            android:onClick="onGame"
+            android:src="@drawable/game2" />
+
+        <ImageButton
+            android:id="@+id/movie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/game"
+            android:layout_alignLeft="@+id/music"
+            android:layout_marginBottom="22dp"
+            android:background="#0000"
+            android:onClick="onMovie"
+            android:src="@drawable/movie2" />
+
+</RelativeLayout>
